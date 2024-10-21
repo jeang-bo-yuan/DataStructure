@@ -73,8 +73,8 @@ public:
     /// @return 被移除的最大值
     value_type popMax();
 
-    /// @brief 
-    /// @param value 
+    /// @brief 將value插入Min-Max Heap
+    /// @param value 插入的值
     void push(value_type value);
 
     /// 有幾個元素
