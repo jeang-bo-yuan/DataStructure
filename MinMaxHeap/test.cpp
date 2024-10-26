@@ -51,6 +51,11 @@ TEST(MinMaxHeap, popTest) {
 
 TEST(MinMaxHeap, popTest2) {
     std::vector<int> vec;
+
+    unsigned seed = time(NULL);
+    std::cerr << "Random seed = " << seed;
+    srand(seed);
+
     for (int i = 0; i < 100; ++i) vec.push_back(rand() % 10);
 
     MinMaxHeap mmheap(vec.begin(), vec.end());
@@ -74,6 +79,9 @@ TEST(MinMaxHeap, popTest2) {
 
 TEST(MinMaxHeap, pushTest) {
     MinMaxHeap mmheap;
+    unsigned seed = rand();
+    std::cerr << "Random seed = " << seed;
+    srand(seed);
     for (int i = 0; i < 100; ++i)
         mmheap.push(rand() % 10);
 

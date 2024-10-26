@@ -11,4 +11,5 @@ add_subdirectory("deps/googletest")
 enable_testing(TRUE)
 
 # unit tests
+add_subdirectory("Deap")
 add_subdirectory("MinMaxHeap")
