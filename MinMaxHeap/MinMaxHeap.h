@@ -9,6 +9,7 @@
 #include <initializer_list>
 #include <stdint.h>
 #include <assert.h>
+#include <limits>
 
 /// MinMaxHeap 中節點 index 的計算函數，傳入的參數都假設是0-indexed
 namespace MinMaxHeap_Trait {
